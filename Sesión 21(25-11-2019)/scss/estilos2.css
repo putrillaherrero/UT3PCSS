@@ -1,0 +1,58 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1em;
+}
+
+/*En este ejemplo vamos a aprender una 
+nueva propiedad: font*/
+body {
+  font: 1em Helvetica, sans-serif;
+  color: #bb3939;
+}
+
+.contenedor {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flow-root;
+  /*A pesar de no darle una altura al contendor, 
+  permite que se adecue al tamaño.*/
+}
+
+article[role=main] {
+  float: left;
+  width: 62.5%;
+  min-height: 400px;
+  background-color: #feafea;
+}
+
+aside[role=complementary] {
+  float: right;
+  width: 37.5%;
+  min-height: 400px;
+  background-color: royalblue;
+}
+
+/*Prueba de operadores*/
+h3 {
+  font-size: 10px;
+  /*El último sin unidades para uqe no de error*/
+}
+
+h4 {
+  font-size: 7px;
+}
+
+h5 {
+  font-size: 7px;
+}
+
+/*# sourceMappingURL=estilos2.css.map */

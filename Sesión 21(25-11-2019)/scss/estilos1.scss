@@ -1,0 +1,30 @@
+.capacontenedora {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-height: 400px;
+    background-color: blanchedalmond;
+    > .capahija {
+        width: 50%;
+        min-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: aqua;
+    }
+}
+
+.capacontenedora2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-height: 400px;
+    background-color: fuchsia;
+    > .capahija2 {
+        width: 50%;
+        min-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        color: white;
+    }
+}
