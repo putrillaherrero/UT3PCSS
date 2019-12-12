@@ -1,0 +1,18 @@
+.contenedorFlex {
+  min-height: 300px;
+  background-color: dodgerblue;
+  display: flex;
+}
+
+.contenedorFlex > div {
+  margin: 15px;
+  padding: 15px;
+  font-size: 1.8rem;
+  background-color: fuchsia;
+}
+
+.contenedorFlex {
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=estilos1.css.map */

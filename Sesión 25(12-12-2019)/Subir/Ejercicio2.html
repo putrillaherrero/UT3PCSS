@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2 - Sesión 25</title>
+    <link rel="stylesheet" href="Estilos1.css">
+</head>
+
+<body>
+    <h1>Ejercicio 2 - Sesión 25</h1>
+    <h2>Propiedad Order</h2>
+    <p>Hay que ponerselo uno por uno a todos los estilos.</p>
+
+    <div class="contenedorFlex">
+        <div style="order: 5;">Elemento 1</div>
+        <div style="order: 1;">Elemento 2</div>
+        <div style="order: 4;">Elemento 3</div>
+        <div style="order: 2;">Elemento 4</div>
+        <div style="order: 3;">Elemento 5</div>
+    </div>
+
+    <h2>Propiedad Flex-Grow</h2>
+    <p>Cuidado con el texto, porque el contenedor se adapta al
+        tamaño del texto y luego hace la proporción pertinente.</p>
+
+    <div class="contenedorFlex">
+        <div style="flex-grow: 3;">1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div style="flex-grow: 5;">3</div>
+        <div style="flex-grow: 9;">4</div>
+        <div style="flex-grow: 7;">5</div>
+    </div>
+
+    <h2>Propiedad Flex-Shrink</h2>
+    <p>El tercer elemento no encogerá nada respecto al resto 
+        de elementos.</p>
+    <div class="contenedorFlex">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 2;">2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div style="flex-grow: 2;">4</div>
+        <div style="flex-grow: 3;">5</div>
+    </div>
+</body>
+
+</html>

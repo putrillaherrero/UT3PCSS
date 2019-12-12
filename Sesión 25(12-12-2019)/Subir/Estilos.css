@@ -1,0 +1,65 @@
+.contenedorFlexAlignContent > div, .contenedorFlexCentrado > div, .contenedorFlex > div {
+  background-color: firebrick;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.contenedorFlexAlignContent, .contenedorFlexCentrado, .contenedorFlex {
+  display: flex;
+  background-color: dodgerblue;
+  min-height: 450px;
+  flex-wrap: wrap;
+}
+
+.contenedorFlex {
+  align-items: flex-end;
+}
+.contenedorFlexCentrado {
+  align-items: center;
+  justify-content: center;
+}
+.contenedorFlexAlignContent {
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-around;
+}
+.contenedorFlexBaseline {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+
+.contenedorFlexBaseline > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.contenedorPerfecto, .contenedorF {
+  display: flex;
+  background-color: lightblue;
+  min-height: 700px;
+}
+
+.contenedorPerfecto > div, .contenedorF > div {
+  background-color: pink;
+  margin: 15px;
+  padding: 18px;
+  font-size: 2rem;
+}
+
+.contenedorF {
+  justify-content: center;
+  align-items: flex-start;
+}
+.contenedorPerfecto {
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Estilos.css.map */
