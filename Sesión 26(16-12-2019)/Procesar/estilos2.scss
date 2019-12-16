@@ -1,0 +1,27 @@
+body {
+    counter-reset: consola;
+
+    h3::before {
+        counter-increment: consola;
+        content: "Consola de videojuegos "
+        counter(consola)
+        ": ";
+    }
+}
+
+.contenedor1 {
+    counter-reset: consola1;
+    h3 {
+        counter-reset: videojuegos1;
+    }
+    h3::before {
+        counter-increment: consola;
+        content: "Consola de viedojuegos " counter(consola1) ". ";
+    }
+    h4::before {
+        counter-increment: videojuegos1;
+        content: counter(consola1)
+        "."counter(videojuegos1) " ";
+    }
+}
+

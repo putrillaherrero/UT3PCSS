@@ -1,0 +1,24 @@
+body {
+  counter-reset: consola;
+}
+body h3::before {
+  counter-increment: consola;
+  content: "Consola de videojuegos " counter(consola) ": ";
+}
+
+.contenedor1 {
+  counter-reset: consola1;
+}
+.contenedor1 h3 {
+  counter-reset: videojuegos1;
+}
+.contenedor1 h3::before {
+  counter-increment: consola;
+  content: "Consola de viedojuegos " counter(consola1) ". ";
+}
+.contenedor1 h4::before {
+  counter-increment: videojuegos1;
+  content: counter(consola1) "." counter(videojuegos1) " ";
+}
+
+/*# sourceMappingURL=estilos2.css.map */
