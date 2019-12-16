@@ -1,0 +1,91 @@
+.contenedorflex {
+    display: flex;
+    width: 500px;
+    background-color: royalblue;
+    padding: 20px;
+    min-height: 200px;
+    
+
+    > .elemento1 {
+        flex-basis: 200px;
+        /*Si marcas un flex-bassis: 
+            1.- Si introduces un grow o shrink 
+        que lo haga disminuir de tamaño, no disminuye,
+        respetenado al bassis.
+            2.- Si introduces un grow o shrink 
+        que lo haga aumentar de tamaño, aumenta, 
+        aumentado el valor dado por el bassis.*/
+        flex-grow: 1;
+        background-color: firebrick;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    > .elemento2 {
+        flex-basis: auto;
+        flex-grow: 2;
+        background-color: firebrick;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    > .elemento3 {
+        flex-basis: auto;
+        flex-grow: 2;
+        background-color: firebrick;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    > .elementoHijo1 {
+        padding: 10px;
+        background-color: ghostwhite;
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    > .elementoHijo2 {
+        padding: 10px;
+        background-color: ghostwhite;
+        align-self: center;
+        flex-grow: 1;
+    }
+
+    > .elementoHijo3 {
+        padding: 10px;
+        background-color: ghostwhite;
+        align-self: flex-end;
+        flex-grow: 1;
+    }
+}
+
+.contenedorflex1 {
+    display: flex;
+    background-color: lemonchiffon;
+    padding: 10px;
+
+    > .elemento1 {
+        /*No hereda la propiedad flex de su contenedor.*/
+        display: flex;
+        background-color: mediumseagreen;
+        padding: 5px;
+        border: 1px black solid;
+
+        > .elemento11 {
+            background-color: plum;
+            padding: 3px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        > .elemento12 {
+            background-color: plum;
+            padding: 3px;
+        }
+    }
+
+    > .elemento2 {
+        background-color: mediumseagreen;
+        padding: 10px;
+    }
+}
+
